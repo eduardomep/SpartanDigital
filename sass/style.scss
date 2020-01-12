@@ -1,0 +1,259 @@
+//Sass watch route
+//sass --watch sass/style.scss css/style.css
+
+
+//Josefin Sans Font
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600,700&display=swap');
+
+$navbar-dark-brand-color: white;
+$navbar-dark-color: #D3D3D3;
+$navbar-dark-hover-color: white;
+$link-color: #D3D3D3;
+$link-hover-decoration: none;
+$navbar-dark-toggler-border-color: none;
+// $navbar-padding-y: 32px ;
+// // $navbar-padding-x: 54px;
+// $navbar-toggler-padding-y:0; 
+// $navbar-toggler-padding-x:0;
+
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+$theme-colors: (
+  "primary": #DE0909,
+  "danger": #ff4136
+);
+
+
+$enable-responsive-font-sizes: true;
+$btn-padding-y: 8px;
+$btn-padding-x: 16px;
+$btn-font-weight: 500;
+$body-bg: #090909 !default;
+
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1400px
+) ;
+
+
+
+*{
+    color: white;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 16px;
+    min-width: 64px;
+}
+
+
+
+.title, .navbar-complement p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+
+.main-title{
+    font-size: 54px;
+}
+.sub-title{
+    font-size: 24px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+.light{
+    font-weight: lighter;
+}
+
+
+.landing-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(10, 10, 10, 0) 87.21%, #090909 101.93%), linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-image{
+    width: 100%;
+}
+
+.smoke{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.z-2{
+    z-index: 2;
+}
+
+p{
+    color: #7D7D7D;
+    font-size: 18px;
+    font-family:'Inter';
+}
+
+.title--build-section{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.subtitle--build-section{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+.description-icon{
+    width: 32px;
+}
+.build-item{
+    background-color: #0F0F0F;
+    width: 100%;
+}
+.feature-list  li{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px 0 5px 0;
+}
+.price-build--section{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 24pxz;
+
+}
+
+h1,h2,h3,h4{
+    text-transform: uppercase;
+}
+
+.build-item{
+    height: 100%;
+}
+
+
+
+.build-img {
+    background: linear-gradient(180deg, rgba(13, 13, 13, 0) 33.15%, #0F0F0F 80.62%), url("/assets/img/build.png");
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center
+}
+
+.my-custom{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+
+
+
+@import "../node_modules/bootstrap/scss/transitions";
+
+
+
+
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+@include media-breakpoint-up(lg) { 
+    .build-item:hover{
+        .build-img{
+            top: -115px;
+            width: 70%;
+            transform: scale(1.05);
+            transition: 0.3s ease-out;
+        }
+        box-shadow: 0px 2px 200px rgba(219, 9, 9, 0.08);
+        transition: 0.2s ease-in-out;
+        .title--build-section{
+            transition: 0.2s ease-in-out;
+        }
+    }
+    .build-img {
+        position: absolute;
+        top: -100px;
+        background: linear-gradient(180deg, rgba(13, 13, 13, 0) 33.15%, #0F0F0F 80.62%), url("/assets/img/build.png");
+        background-size: contain;
+        width: 70%;
+        background-repeat: no-repeat;
+        height: 60%;
+        transition: 0.3s ease-out;
+        z-index: 1;
+    }
+    .build-item{
+        padding-top: 220px;
+        transition: 0.2s ease-in-out;
+    }
+    .build-row{
+        margin-top: 175px;
+    }
+    .w-lg-50{
+        width: 50% !important;
+    }
+    
+ 
+}
+
+
+@include media-breakpoint-down(md) { 
+    .main-title{
+        font-size: 35px;
+    }
+    .main-image{
+        width: 75%;
+    }
+
+
+
+    
+
+ }
+
+ 
+@include media-breakpoint-down(xs) { 
+    .main-title{
+        font-size: 28px;
+    }
+    .main-image{
+        width: 100%;
+    }
+
+
+ }
