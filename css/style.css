@@ -10,6 +10,12 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
+.contact-section {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background-color: #090909;
+}
+
 * {
   color: white;
 }
@@ -197,6 +203,109 @@ h1, h2, h3, h4 {
   background-size: cover;
   height: 500px;
   width: 100%;
+}
+
+.form-control {
+  color: #090909 !important;
+  font-weight: 500 !important;
+}
+
+footer {
+  background-color: #0D0D0D;
+}
+
+.bg-black {
+  background-color: #0A0A0A;
+}
+
+.store-title {
+  font-size: 24px;
+}
+
+.top-nav {
+  background-color: #BF0811;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-nav {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-nav * {
+  color: white;
+}
+
+.landing-announcement {
+  border-radius: 10px;
+  background-color: #BF0811;
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+
+.landing-announcement img, .landing-announcement div {
+  position: absolute;
+}
+.landing-announcement .product-1 {
+  bottom: -100px;
+  right: -100px;
+}
+.landing-announcement .product-2 {
+  top: -75px;
+  left: 100px;
+}
+.landing-announcement .product-3 {
+  bottom: -50px;
+  left: -20px;
+}
+.landing-announcement .product-4 {
+  top: -150px;
+  right: -50px;
+}
+.landing-announcement .product-5 {
+  top: -50px;
+  left: 50%;
+}
+.landing-announcement .product-6 {
+  bottom: -50px;
+  left: 50%;
+}
+.landing-announcement div {
+  top: 30%;
+  left: 20%;
+  width: 100%;
+  z-index: 10;
+}
+.landing-announcement .salpicadura-1, .landing-announcement .salpicadura-2 {
+  width: 50%;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+.landing-announcement .salpicadura-1 {
+  top: 0%;
+  right: 0%;
+}
+.landing-announcement .salpicadura-2 {
+  transform: rotate(180deg);
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.secondary-announcement {
+  border-radius: 10px;
+  background-color: #090909;
+  overflow: hidden;
+  position: relative;
+  height: 175px;
+}
+
+.text-black {
+  color: #090909 !important;
 }
 
 *,

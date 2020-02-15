@@ -36,6 +36,13 @@ $btn-padding-x: 16px;
 $btn-font-weight: 500;
 $body-bg: #090909 !default;
 
+.contact-section{
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-color: #090909;
+
+}
+
 $container-max-widths: (
   md: 720px,
   lg: 960px,
@@ -236,6 +243,104 @@ h1,h2,h3,h4{
     background-size: cover;
     height: 500px;
     width: 100%;
+}
+
+
+.form-control{
+    color: #090909 !important;
+    font-weight: 500 !important;
+}
+footer{
+    background-color: #0D0D0D;
+}
+
+.bg-black{
+    background-color: #0A0A0A;
+}
+.store-title{
+    font-size: 24px;
+}
+.top-nav{
+    background-color: #BF0811;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-nav{
+    background-color: #181818;
+    *{ color: white;}
+    display: flex;
+    justify-content: space-between;
+}
+.landing-announcement{
+    border-radius: 10px;
+    background-color: #BF0811;
+    overflow:hidden;
+    position: relative;
+    height: 250px;
+}
+.landing-announcement{
+    
+    img, div{
+        position: absolute;
+    }
+    .product-1{
+        bottom: -100px;
+        right: -100px;
+    }
+    .product-2{
+        top: -75px;
+        left: 100px;
+    }
+    .product-3{
+        bottom: -50px;
+        left: -20px;
+    }
+    .product-4{
+        top: -150px;
+        right: -50px;
+    }
+    .product-5{
+        top: -50px;
+        left: 50%;
+    }
+    .product-6{
+        bottom: -50px;
+        left: 50%;
+    }
+    div{
+        top: 30%;
+        left: 20%;
+        width: 100%;
+        z-index: 10;
+    }
+    .salpicadura-1, .salpicadura-2{
+        width: 50%;
+        mix-blend-mode: multiply;
+        opacity: 0.5;
+
+    }
+    .salpicadura-1{
+        top: 0%;
+        right: 0%;
+    }
+    .salpicadura-2{
+        transform: rotate(180deg);
+    }
+}
+.w-85{
+    width: 85%;
+}
+.secondary-announcement{
+    border-radius: 10px;
+    background-color: #090909;
+    overflow:hidden;
+    position: relative;
+    height: 175px;
+}
+
+.text-black{
+    color: #090909!important;
 }
 
 // Required
